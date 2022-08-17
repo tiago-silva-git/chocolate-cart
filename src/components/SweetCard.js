@@ -2,26 +2,51 @@ import React from "react";
 import styled from "styled-components";
 
 
-export default function SweetCard() {
+export default function SweetCard(props) {
     return (
         <PriceSweet>
             <figure>
-            <ImgSweet src="http://codeby.vteximg.com.br/arquivos/ids/159959-800-1029/truffon-meio-amargo.png?v=636930938547630000"></ImgSweet>
+                <ImgSweet src={props.image}></ImgSweet>
             </figure>
-            <h4>Trufa de morango</h4>
-            <p>R$ 3,03</p>
-            <p>R$ 2,73</p>
+            <InfoSweet>
+                <h4>{props.nameSweet}</h4>
+                <p>{props.fullPrice}</p>
+                <p>{props.price}</p>
+            </InfoSweet>
         </PriceSweet>
     );
 }
 
 const PriceSweet = styled.div`
-
-
+display: flex;
 `;
 
-const ImgSweet = styled.figure`
-width: 150px;
-height: 150px;
+const ImgSweet = styled.img`
+object-fit: contain;
+height: 90px;
+width: 90px;
+
+margin: 16px 16px 0px 16px;
+border: 1px solid #D5D5D5;
+`;
+
+const InfoSweet = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 16px 0px 16px 0px;
+font-size: .75rem;
+letter-spacing: -.02em;
+
+p:nth-child(2)  {
+    color: #d5d5d5;
+    font-size: .75rem;
+    letter-spacing: -.02em;
+}
+
+p:nth-child(3)  {
+    font-size: .75rem;
+    letter-spacing: -.02em;
+}
 
 `;

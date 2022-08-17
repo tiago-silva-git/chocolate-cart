@@ -2,15 +2,15 @@ import React from "react";
 import styled from "styled-components";
 
 
-export default function Footer() {
+export default function Header() {
     return (
-      <FooterCart>
+      <HeaderCart>
         <Title>Meu carrinho</Title>
-      </FooterCart>
+      </HeaderCart>
     );
 }
   
-const FooterCart = styled.footer`
+const HeaderCart = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
