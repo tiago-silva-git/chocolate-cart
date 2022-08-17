@@ -3,29 +3,33 @@ import styled from "styled-components";
 
 
 export default function SweetCard(props) {
+    const { image, nameSweet, fullPrice, price} = props
     return (
-        <PriceSweet>
+        <CardSweet>
             <figure>
-                <ImgSweet src={props.image}></ImgSweet>
+                <ImgSweet src={image}></ImgSweet>
             </figure>
             <InfoSweet>
-                <h4>{props.nameSweet}</h4>
-                <p>{props.fullPrice}</p>
-                <p>{props.price}</p>
+                <h4>{nameSweet}</h4>
+                <p>{fullPrice}</p>
+                <p>{price}</p>
             </InfoSweet>
-        </PriceSweet>
+        </CardSweet>
     );
 }
 
-const PriceSweet = styled.div`
+const CardSweet = styled.div`
 display: flex;
+
+figure:first-of-type {
+    display: flex;
+}
 `;
 
 const ImgSweet = styled.img`
 object-fit: contain;
 height: 90px;
 width: 90px;
-
 margin: 16px 16px 0px 16px;
 border: 1px solid #D5D5D5;
 `;
@@ -48,5 +52,4 @@ p:nth-child(3)  {
     font-size: .75rem;
     letter-spacing: -.02em;
 }
-
 `;
