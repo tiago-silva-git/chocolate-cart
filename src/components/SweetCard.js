@@ -21,7 +21,7 @@ export default function SweetCard(props) {
 const CardSweet = styled.div`
 display: flex;
 
-figure:first-of-type {
+figure {
     display: flex;
 }
 `;
@@ -44,11 +44,6 @@ letter-spacing: -.02em;
 
 p:nth-child(2)  {
     color: #d5d5d5;
-    font-size: .75rem;
-    letter-spacing: -.02em;
-}
-
-p:nth-child(3)  {
     font-size: .75rem;
     letter-spacing: -.02em;
 }

@@ -22,10 +22,6 @@ height: 127px;
 padding: 12px;
 border: 1px solid #D5D5D5;
 margin-top: 21px;
-
-div:nth-of-type(2) {
-margin: 21px auto 0 auto;
-}
 `;
 
 const Total = styled.div`
@@ -40,9 +36,10 @@ background: #D2FDAF;
 border-radius: 50px;
 height: 36px;
 align-items: center;
-width: 315px;
+max-width: 315px;
+margin: 21px auto 0 auto;
 
-p:nth-of-type(1) {
+p {
     font-size: 14px;
     color: #3D7820;
 }

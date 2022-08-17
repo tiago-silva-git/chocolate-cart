@@ -14,9 +14,7 @@ const HeaderCart = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
-
     height: 47px;
-
     border-bottom: 1px solid #D5D5D5;
 `;
 
