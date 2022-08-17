@@ -1,4 +1,5 @@
 import React from "react";
+import CheckoutButton from "./CheckoutButton";
 import styled from "styled-components";
 
 export default function TotalSummary() {
@@ -13,7 +14,9 @@ export default function TotalSummary() {
             <FreeShipping>
                 <p>Parabéns, sua compra tem frete grátis!</p>
             </FreeShipping>
+            <CheckoutButton />
         </Section>
+        
     );
   }
 
@@ -22,6 +25,10 @@ height: 127px;
 padding: 12px;
 border: 1px solid #D5D5D5;
 margin-top: 21px;
+
+div:nth-of-type(3) {
+    margin-top: 36px;
+}
 `;
 
 const Total = styled.div`
