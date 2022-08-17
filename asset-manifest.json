@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/chocolate-cart/static/js/main.e0bcf408.js",
+    "index.html": "/chocolate-cart/index.html",
+    "main.e0bcf408.js.map": "/chocolate-cart/static/js/main.e0bcf408.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.e0bcf408.js"
+  ]
+}
