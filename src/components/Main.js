@@ -20,7 +20,7 @@ export default function Main() {
               const infosSweet = response.data.items;
 
           setState(
-            infosSweet.map((elem, i) => <SweetCard image={elem.imageUrl} nameSweet={elem.name} fullPrice={`R$ ${elem.price}`} price={`R$ ${elem.sellingPrice}`} key={i}/>)
+            infosSweet.map((elem, i) => <SweetCard image={elem.imageUrl} nameSweet={elem.name} fullPrice={`R$ ${(elem.price / 100).toFixed(2)}`} price={`R$ ${(elem.sellingPrice / 100).toFixed(2)}`} key={i}/>)
           );
 
         };
